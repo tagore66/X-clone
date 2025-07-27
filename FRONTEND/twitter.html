@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>X Clone Login/Register</title>
+<link rel="stylesheet" href="twitter.css" />
+</head>
+<body>
+  <!-- Splash Loader -->
+  <div id="splash" class="splash-screen">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Twitter_new_X_logo.png/640px-Twitter_new_X_logo.png" 
+         alt="X Logo" class="splash-logo" />
+  </div>
+
+  <div class="container">
+    <div class="left-section">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Twitter_new_X_logo.png/640px-Twitter_new_X_logo.png"
+           alt="X Logo" class="x-logo" />
+    </div>
+    <div class="right-section">
+      <h1 class="heading">Happening now</h1>
+      <h2 class="subheading">Join today.</h2>
+
+      <div class="signup-options">
+        <button class="google-btn" id="google-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/1024px-Google_Favicon_2025.svg.png" alt="Google" />
+          Sign up with Google
+        </button>
+        <button class="apple-btn" id="apple-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" />
+          Sign up with Apple
+        </button>
+      </div>
+
+      <div class="divider"><span></span> OR <span></span></div>
+
+      <button class="create-btn" id="show-signup">Create account</button>
+
+      <p class="terms">
+        By signing up, you agree to the
+        <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>,
+        including <a href="#">Cookie Use</a>.
+      </p>
+
+      <h3 class="login-text">Already have an account?</h3>
+      <button class="login-btn" id="show-login">Sign in</button>
+
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signup-modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Create Account</h2>
+      <input type="text" id="signup-username" placeholder="Username" />
+      <input type="email" id="signup-email" placeholder="Email" />
+      <input type="password" id="signup-password" placeholder="Password" />
+      <button id="signup-submit">Sign Up</button>
+      <button class="close-btn" id="signup-close">Close</button>
+    </div>
+  </div>
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" />
+      <input type="password" id="login-password" placeholder="Password" />
+      <button id="login-submit">Login</button>
+      <button class="close-btn" id="login-close">Close</button>
+    </div>
+  </div>
+
+  <script src="twitter.js"></script>
+</body>
+</html>
