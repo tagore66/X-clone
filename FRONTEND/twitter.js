@@ -1,4 +1,4 @@
-const backendURL = 'https://x-clone-k842.onrender.com';
+const backendURL = 'https://x-clone-1uw8.onrender.com';
 const messageDiv = document.getElementById('message');
 
 // Signup modal controls
