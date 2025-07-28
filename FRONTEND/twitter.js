@@ -36,7 +36,7 @@ signupSubmitBtn.onclick = async () => {
     return;
   }
   try {
-    const res = await fetch(`https://x-clone-k842.onrender.com/auth/signup`, {
+    const res = await fetch(`${backendURL}/auth/signup`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, email, password }),
@@ -68,7 +68,7 @@ loginSubmitBtn.onclick = async () => {
     return;
   }
   try {
-    const res = await fetch(`https://x-clone-k842.onrender.com/auth/login`, {
+    const res = await fetch(`${backendURL}/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
