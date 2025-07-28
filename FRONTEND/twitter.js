@@ -68,7 +68,7 @@ loginSubmitBtn.onclick = async () => {
     return;
   }
   try {
-    const res = await fetch(`${backendURL}/auth/login`, {
+    const res = await fetch(`https://x-clone-k842.onrender.com/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
